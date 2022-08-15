@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Allnav from './Allnav';
+ import './index.css';
+import './assets/css/animate.css';
+import './assets/css/animate.css';
+import './assets/css/bootstrap.css';
+import './assets/css/font-awesome.css';
+import './assets/css/jquery.fancybox.min.css';
+import './assets/css/ntfs.css';
+import './assets/css/responsive.css';
+import './assets/css/shortcodes.css';
+import './assets/css/style.css';
+import './assets/css/swiper-bundle.min.css';
 
-function App() {
+
+function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+        <Allnav />
+     </>
+  )
 }
 
 export default App;
