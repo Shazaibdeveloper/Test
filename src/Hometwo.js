@@ -49,6 +49,8 @@ import icon12 from './assets/images/icon/icon-12.svg';
 import icon13 from './assets/images/icon/icon-13.svg';
 import Topbar from './Topbar';
 import Navbar from './Navbar'
+import Newsletter from './Newsletter';
+import Footer from './Footer';
 // import Navbar from './Navbar';
 
 
@@ -1448,68 +1450,8 @@ const Hometwo = () => {
             </div>
         </section>
 
-        <section className ="new-letter bg-color-4">
-            <div className ="container">
-                <div className ="new-letter-inner flex bg-color-5">
-                    <div className ="new-letter-content">
-                        <h3 className ="heading">Newsletters</h3>
-                        <p className ="sub-heading">Most popular gaming digital nft market place </p>
-                        <div className ="form-subcribe">
-                            <form id="subscribe-form" action="#" method="GET" accept-charset="utf-8" className ="form-submit">
-                                <input name="email" value="" className ="email" type="email" placeholder="Enter Email Address" required="" />
-                                <button name="submit" type="submit" id="submit" className ="sc-button style letter style-2"><span>Browse More</span> </button>
-                            </form>
-                        </div>
-                    </div>
-                    <div className ="new-letter-img">
-                    <img src= {newletter} alt="Image" />                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer id="footer" className ="clearfix bg-style style-2 ">
-            <div className ="container">
-                <div className ="row">
-                    <div className ="col-lg-10 col-md-12 col-12">
-                        <div className ="widget widget-logo">
-                            <div className ="logo-footer" id="logo-footer">
-                                <a href="index.html">
-                                    <img id="logo_footer" src={dark} alt="nft-gaming" width="151" height="45" data-retina="assets/images/logo/logo_dark@2x.png" data-width="151" data-height="45" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className ="widget widget-menu menu-marketplace style-2">
-                            <ul>
-                                <li><a href="item.html">Gaming </a></li>
-                                <li><a href="item.html">Product </a></li>
-                                <li><a href="item.html">All NFTs</a></li>
-                                <li><a href="item.html">Social Network</a></li>
-                                <li><a href="item.html">Domain Names</a></li>
-                                <li><a href="item.html">Collectibles</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className ="col-lg-2 col-md-12 col-12">
-                        <div className ="widget-social style-2">
-                            <h5 className ="title-widget">Follow Us</h5>
-                            <ul>
-                                <li><a href="#" className ="active"><i className ="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i className ="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i className ="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i className ="fab fa-youtube"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer> 
-        <div className ="bottom">
-            <div className ="container">
-                <div className ="bottom-inner">
-                    Copyright © 2022 Bidzen | NFT Marketplace HTML Template. Designed by <a href="https://themeforest.net/user/themesflat/portfolio"> Themesflat</a>
-                </div>
-            </div>
-        </div>
+        <Newsletter />
+       <Footer />
 
     </div>
     

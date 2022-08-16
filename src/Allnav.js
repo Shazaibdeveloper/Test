@@ -20,35 +20,38 @@ import Explore2 from './Explore2';
 import Item from './Item';
 import Itemdetails from './Itemdetails';
 import Blog from './Blog';
+import Blogdetails from './Blogdetails';
 import Author from './Author';
 import Connectwallet from './Connectwallet';
 import Createitem from './Createitem';
 import Login from './Login';
 import Register from './Register';
 import Contact from './Contact';
-import Navbar from './Navbar';
+import Test from './Test';
  
 const Allnav = () => {
   return (
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/home" element={<Home />}/>
-          <Route path="/hometwo" element={<Hometwo />} />
-          <Route path="/homeanimation" element={<Homeanimation />} />
-          <Route path="/explore1" element={<Explore1 />} />
-          <Route path="/explore2" element={<Explore2 />} />
-          <Route path="/creator" element={<Creator />} />
-          <Route path="/item" element={<Item />} />
-          <Route path="/itemdetails" element={<Itemdetails />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/author" element={<Author />} />
-          <Route path="/connectwallet" element={<Connectwallet />} />
-          <Route path="/createitem" element={<Createitem />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/"                element={<Home />}/>
+          <Route path="/home"            element={<Home />}/>
+          <Route path="/hometwo"         element={<Hometwo />} />
+          <Route path="/homeanimation"   element={<Homeanimation />} />
+          <Route path="/explore1"        element={<Explore1 />} />
+          <Route path="/explore2"        element={<Explore2 />} />
+          <Route path="/creator"         element={<Creator />} />
+          <Route path="/item"            element={<Item />} />
+          <Route path="/itemdetails"     element={<Itemdetails />} />
+          <Route path="/blog"            element={<Blog />} />
+          <Route path="/blogdetails"     element={<Blogdetails />} />
+          <Route path="/author"          element={<Author />} />
+          <Route path="/connectwallet"   element={<Connectwallet />} />
+          <Route path="/createitem"      element={<Createitem />} />
+          <Route path="/login"           element={<Login />} />
+          <Route path="/register"        element={<Register />} />
+          <Route path="/contact"         element={<Contact />} />
+          <Route path="/test"            element={<Test />} />
        </Routes>
     </BrowserRouter>
     </>

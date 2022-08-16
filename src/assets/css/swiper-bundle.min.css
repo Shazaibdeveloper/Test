@@ -81,6 +81,10 @@
     transition-property: transform
 }
 
+section.tf-section.auctions-page .swiper-slide {
+    width: 25% !important;
+}
+
 .swiper-container.live-auc .swiper-slide {
     width: 22% !important;
     margin: 0 20px;

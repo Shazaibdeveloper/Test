@@ -823,6 +823,10 @@ section.tf-trendy-collections.tf-section .swiper-slide {
     margin: 15px;
 }
 
+section.hot-collections-page .swiper-slide {
+    width: 25% !important;
+}
+
 section.tf-trendy-collections.tf-section .swiper-wrapper {
     display: flex;
     flex-wrap: wrap;

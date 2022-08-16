@@ -64,7 +64,7 @@ const Navbar = () => {
                                                 <li className ="menu-item"><NavLink to="/author">Authors</NavLink></li>
                                                 <li className ="menu-item"><NavLink to="/connectwallet">Wallet
                                                         Connect</NavLink></li>
-                                                <li className ="menu-item"><NavLink to="/create-item">Create Item</NavLink>
+                                                <li className ="menu-item"><NavLink to="/createitem">Create Item</NavLink>
                                                 </li>
                                                 <li className ="menu-item"><NavLink to="/login">Login</NavLink></li>
                                                 <li className ="menu-item"><NavLink to="/register">Register</NavLink></li>
@@ -77,10 +77,10 @@ const Navbar = () => {
                                 </nav> 
                             </div>
                             <div className ="button-connect-wallet">
-                                <a href="connect-wallet.html" className ="sc-button wallet  style-2">
+                                <Link to="/connectwallet" className ="sc-button wallet  style-2">
                                     <img src={wallet} alt="icon" />
                                     <span>Connect Wallet</span>
-                                </a>
+                                </Link>
                             </div>
 
                             <div className ="mode_switcher">

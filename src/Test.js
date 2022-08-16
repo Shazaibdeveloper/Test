@@ -48,6 +48,8 @@ import category5 from './assets/images/category/category-5.jpg';
 import category6 from './assets/images/category/category-6.jpg';
 import Topbar from './Topbar';
 import Navbar from './Navbar'
+import Newsletter from './Newsletter';
+import Footer from './Footer';
 
 const Test = () => {
   return (
@@ -59,100 +61,7 @@ const Test = () => {
         <Topbar/>
            <Navbar />
 
-
-            <header id="header_main" className ="header_1 js-header">
-                <div className ="container-fluid">
-                    <div className ="row">
-                        <div className ="col-md-12">
-                            <div className ="mobile-button"><span></span></div> 
-                            <div id="site-header-inner" className ="flex">
-                                <div id="site-logo" className ="clearfix">
-                                    <div id="site-logo-inner">
-                                        <a href="index.html" rel="home" className ="main-logo">
-                                            <img id="logo_header" src={img1}
-                                                alt="nft-gaming" width="151" height="45"
-                                                data-retina="assets/images/logo/logo_dark@2x.png" data-width="151"
-                                                data-height="45"/>
-                                        </a>
-                                    </div>
-                                </div>
-                                <form className ="form-search">
-                                    <input type="text" placeholder="Search here"/>
-                                    <button><i className ="far fa-search"></i></button>
-                                </form>
-
-                                <div id="site-menu">
-                                    <nav id="main-nav" className ="main-nav">
-                                        <ul id="menu-primary-menu" className ="menu">
-                                            <li className ="menu-item menu-item-has-children  current-item">
-                                                <a href="#">Home</a>
-                                                <ul className ="sub-menu">
-                                                    <li className ="menu-item current-item"><a href="Home.js">Home 1</a>
-                                                    </li>
-                                                    <li className ="menu-item"><a href="Home2.js">Home 2</a></li>
-                                                    <li className ="menu-item"><a href="Homeanimation.js">Home Animation</a></li>
-                                                </ul>
-                                            </li>
-                                            <li className ="menu-item menu-item-has-children">
-                                                <a href="#">Explore</a>
-                                                <ul className ="sub-menu">
-                                                    <li className ="menu-item"><a href="explore-1.js">Explore 1</a></li>
-                                                    <li className ="menu-item"><a href="explore-2.js">Explore 2</a></li>
-                                                    <li className ="menu-item"><a href="creator.html">Creator</a></li>
-                                                    <li className ="menu-item"><a href="item.html">Item </a></li>
-                                                    <li className ="menu-item"><a href="item-details.html">Item Details</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-
-                                            <li className ="menu-item menu-item-has-children ">
-                                                <a href="#">Community</a>
-                                                <ul className ="sub-menu">
-                                                    <li className ="menu-item "><a href="blog.html">Blog</a></li>
-                                                    <li className ="menu-item"><a href="blog-details.html">Blog Details</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li className ="menu-item menu-item-has-children">
-                                                <a href="#">Pages</a>
-                                                <ul className ="sub-menu">
-                                                    <li className ="menu-item"><a href="author.html">Authors</a></li>
-                                                    <li className ="menu-item"><a href="connect-wallet.html">Wallet
-                                                            Connect</a></li>
-                                                    <li className ="menu-item"><a href="create-item.html">Create Item</a>
-                                                    </li>
-                                                    <li className ="menu-item"><a href="login.html">Login</a></li>
-                                                    <li className ="menu-item"><a href="register.html">Register</a></li>
-                                                </ul>
-                                            </li>
-                                            <li className ="menu-item ">
-                                                <a href="contact.html">Contact</a>
-                                            </li>
-                                        </ul>
-                                    </nav> 
-                                </div>
-                                <div className ="button-connect-wallet">
-                                    <a href="connect-wallet.html" className ="sc-button wallet  style-2">
-                                        <img src={wallet} alt="icon"/>
-                                        <span>Connect Wallet</span>
-                                    </a>
-                                </div>
-
-                                <div className ="mode_switcher">
-                                    <h6><span>Dark Mode</span> <strong>Activate</strong></h6>
-                                    <a href="#" className ="light d-flex align-items-center">
-                                        <img src={sunpng} alt=""/>
-                                    </a>
-                                    <a href="#" className ="dark d-flex align-items-center is_active">
-                                        <img id="moon_dark" src={moonimg} alt=""/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </header>
+ 
 
             <section class="tf-slider">
                 <div class="swiper-container slider ">
@@ -1273,119 +1182,8 @@ const Test = () => {
                 </div>
             </section>
 
-            <section class="new-letter">
-                <div class="container">
-                    <div class="new-letter-inner flex">
-                        <div class="new-letter-content">
-                            <h3 class="heading">Newsletters</h3>
-                            <p class="sub-heading">Most popular gaming digital nft market place </p>
-                            <div class="form-subcribe">
-                                <form id="subscribe-form" action="#" method="GET" accept-charset="utf-8"
-                                    class="form-submit">
-                                    <input name="email" value="" class="email" type="email"
-                                        placeholder="Enter Email Address" required="" />
-                                    <button name="submit" type="submit" id="submit"
-                                        class="sc-button style letter style-2"><span>Browse More</span> </button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="new-letter-img">
-                            <img src= {newletter} alt="Image" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <footer id="footer" className ="clearfix bg-style ft-home-1">
-                    <div className ="container">
-                        <div className ="row">
-                            <div className ="col-lg-3 col-md-6 col-12">
-                                <div className ="widget widget-logo">
-                                    <div className ="logo-footer" id="logo-footer">
-                                        <a href="index.html">
-                                            <img id="logo_footer" src={dark} alt="nft-gaming"
-                                                width="151" height="45" data-retina="assets/images/logo/logo_dark@2x.png"
-                                                data-width="151" data-height="45" />
-                                        </a>
-                                    </div>
-                                    <p className ="sub-widget-logo">Sed ut perspiciatis unde omnis iste natus error sit voluptate
-                                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quaes</p>
-                                    <div className ="widget-social">
-                                        <ul>
-                                            <li><a href="#" className ="active"><i className ="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i className ="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i className ="fab fa-linkedin-in"></i></a></li>
-                                            <li><a href="#"><i className ="fab fa-youtube"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className ="col-lg-2 col-md-6 col-sm-6 col-6">
-                                <div className ="widget widget-menu menu-marketplace">
-                                    <h5 className ="title-widget">Marketplace</h5>
-                                    <ul>
-                                        <li><a href="item.html">Gaming </a></li>
-                                        <li><a href="item.html">Product </a></li>
-                                        <li><a href="item.html">All NFTs</a></li>
-                                        <li><a href="item.html">Social Network</a></li>
-                                        <li><a href="item.html">Domain Names</a></li>
-                                        <li><a href="item.html">Collectibles</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className ="col-lg-3 col-md-6 col-sm-6 col-6">
-                                <div className ="widget widget-menu menu-supports">
-                                    <h5 className ="title-widget">Supports</h5>
-                                    <ul>
-                                        <li><a href="contact.html">Setting & Privacy </a></li>
-                                        <li><a href="contact.html">Help & Support </a></li>
-                                        <li><a href="item.html">Live Auctions</a></li>
-                                        <li><a href="item-details.html"> Item Details</a></li>
-                                        <li><a href="contact.html"> 24/7 Supports</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className ="col-lg-4 col-md-6 col-sm-12 col-12">
-                                <div className ="widget widget-post">
-                                    <h5 className ="title-widget">News & Post</h5>
-                                    <ul className ="post-new">
-                                        <li>
-                                            <div className ="post-img">
-                                                <img src={new4} alt="Post New" />
-                                            </div>
-                                            <div className ="post-content">
-                                                <h6 className ="title"><a href="blog-details.html">Roll Out New Features Without
-                                                        Hurting Loyal Users</a></h6>
-                                                <a href="blog-details.html" className ="post-date"><i
-                                                        className ="far fa-calendar-week"></i> 25 JAN 2022</a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className ="post-img">
-                                                <img src={new5} alt="Post New" />
-                                            </div>
-                                            <div className ="post-content">
-                                                <h6 className ="title"><a href="blog-details.html">An Overview The Most Comon UX
-                                                        Design Deliverables</a></h6>
-                                                <a href="blog-details.html" className ="post-date"><i
-                                                        className ="far fa-calendar-week"></i> 25 JAN 2022</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer> 
-                <div className ="bottom">
-                    <div className ="container">
-                        <div className ="bottom-inner">
-                            Copyright © 2022 Bidzen | NFT Marketplace HTML Template. Designed by <a
-                                href="https://themeforest.net/user/themesflat/portfolio"> Themesflat</a>
-                        </div>
-                    </div>
-                </div>
+            <Newsletter />
+       <Footer />
 
         </div>
      </div>

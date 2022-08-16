@@ -24,8 +24,63 @@ import icon7 from './assets/images/icon/icon-7.png';
 import icon8 from './assets/images/icon/icon-8.svg';
 import icon9 from './assets/images/icon/icon-9.svg';
 import Topbar from './Topbar';
+import Newsletter from './Newsletter';
+import Footer from './Footer';
+import { useState } from 'react';
+
+   const walletapi = [
+    {
+        icon1 : icon1,
+        head : 'Meta Mask',
+        para : 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+    },
+    {
+        icon1 : icon2,
+        head : 'Bitski',
+        para : 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+    },
+    {
+        icon1 : icon3,
+        head : 'Fortmatic',
+        para : 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+    },
+    {
+        icon1 : icon4,
+        head : 'Wallet Connect',
+        para : 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+    },
+    {
+        icon1 : icon5,
+        head : 'Coinbase Wallet',
+        para : 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+    },
+    {
+        icon1 : icon6,
+        head : 'Authereum',
+        para : 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+    },
+    {
+        icon1 : icon7,
+        head : 'kaikas',
+        para : 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+    },
+    {
+        icon1 : icon8,
+        head : 'Torus',
+        para : 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+    },
+    {
+        icon1 : icon9,
+        head : 'Bitcoin',
+        para : 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+    },
+   ]
+
 
  const Connectwallet = () => {
+
+      const [wallet,setwallet] = useState(walletapi)
+
    return (
     <>
     <div class="body header-fixed is_dark">
@@ -71,232 +126,36 @@ import Topbar from './Topbar';
                             <p class="desc">Most popular gaming digital nft market place </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
+
+                {wallet.map((prop) =>{
+                     const {icon1,head,para} = prop;
+                    return(
+                        <>
+                         <div class="col-lg-4 col-md-4">
                         <div class="sc-wallet">
                             <div class="icon">
                                 <img src= {icon1} alt="" />
                             </div>
                             <div class="content">
-                                <h4><a href="#"> Meta Mask</a></h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium,</p>
+                                <h4><a href="#"> {head}</a></h4>
+                                <p>{para}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="sc-wallet">
-                            <div class="icon">
-                                <img src= {icon2} alt="" />
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">Bitski</a></h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="sc-wallet">
-                            <div class="icon">
-                                <img src= {icon3} alt="" />
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">Fortmatic</a></h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="sc-wallet">
-                            <div class="icon">
-                                <img src= {icon4} alt="" />
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">Wallet Connect</a></h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="sc-wallet">
-                            <div class="icon">
-                                <img src= {icon5} alt="" />
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">Coinbase Wallet</a></h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="sc-wallet">
-                            <div class="icon">
-                                <img src= {icon6} alt="" />
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">Authereum</a></h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="sc-wallet mg-bt-0">
-                            <div class="icon">
-                                <img src={icon7} alt="" />
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">kaikas</a></h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="sc-wallet mg-bt-0">
-                            <div class="icon">
-                                <img src={icon8} alt="" />
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">Torus</a></h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4">
-                        <div class="sc-wallet mg-bt-0">
-                            <div class="icon">
-                                <img src={icon9} alt="" />
-                            </div>
-                            <div class="content">
-                                <h4><a href="#">Bitcoin</a></h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium,</p>
-                            </div>
-                        </div>
-                    </div>
+                        </>
+                    )
+                })}
+
+
+                   
+
+ 
                 </div>
             </div>
         </section>
 
-        <section class="new-letter">
-            <div class="container">
-                <div class="new-letter-inner flex">
-                    <div class="new-letter-content">
-                        <h3 class="heading">Newsletters</h3>
-                        <p class="sub-heading">Most popular gaming digital nft market place </p>
-                        <div class="form-subcribe">
-                            <form id="subscribe-form" action="#" method="GET" accept-charset="utf-8"
-                                class="form-submit">
-                                <input name="email" value="" class="email" type="email"
-                                    placeholder="Enter Email Address" required="" />
-                                <button name="submit" type="submit" id="submit"
-                                    class="sc-button style letter style-2"><span>Browse More</span> </button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="new-letter-img">
-                        <img src= {newletter} alt="Image" />
-                    </div>
-                </div>
-            </div>
-        </section>
-
-         <footer id="footer" class="clearfix bg-style">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="widget widget-logo">
-                            <div class="logo-footer" id="logo-footer">
-                                <a href="index.html">
-                                    <img id="logo_footer" src={img1} alt="nft-gaming"
-                                        width="151" height="45" data-retina="assets/images/logo/logo_dark@2x.png"
-                                        data-width="151" data-height="45" />
-                                </a>
-                            </div>
-                            <p class="sub-widget-logo">Sed ut perspiciatis unde omnis iste natus error sit voluptate
-                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quaes</p>
-                            <div class="widget-social">
-                                <ul>
-                                    <li><a href="#" class="active"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-6">
-                        <div class="widget widget-menu menu-marketplace">
-                            <h5 class="title-widget">Marketplace</h5>
-                            <ul>
-                                <li><a href="author01.html">Gaming </a></li>
-                                <li><a href="connect-wallet.html">Product </a></li>
-                                <li><a href="profile.html">All NFTs</a></li>
-                                <li><a href="create-item.html">Social Network</a></li>
-                                <li><a href="profile.html">Domain Names</a></li>
-                                <li><a href="create-item.html">Collectibles</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
-                        <div class="widget widget-menu menu-supports">
-                            <h5 class="title-widget">Supports</h5>
-                            <ul>
-                                <li><a href="author01.html">Setting & Privacy </a></li>
-                                <li><a href="connect-wallet.html">Help & Support </a></li>
-                                <li><a href="profile.html">Live Auctions</a></li>
-                                <li><a href="create-item.html"> Item Details</a></li>
-                                <li><a href="profile.html"> 24/7 Supports</a></li>
-                                <li><a href="create-item.html">Activitites</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-12">
-                        <div class="widget widget-post">
-                            <h5 class="title-widget">News & Post</h5>
-                            <ul class="post-new">
-                                <li>
-                                    <div class="post-img">
-                                        <img src= {new4} alt="Post New" />
-                                    </div>
-                                    <div class="post-content">
-                                        <h6 class="title"><a href="blog-details.html">Roll Out New Features Without
-                                                Hurting Loyal Users</a></h6>
-                                        <a href="blog-details.html" class="post-date"><i
-                                                class="far fa-calendar-week"></i> 25 JAN 2022</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="post-img">
-                                        <img src= {new5} alt="Post New" />
-                                    </div>
-                                    <div class="post-content">
-                                        <h6 class="title"><a href="blog-details.html">An Overview The Most Comon UX
-                                                Design Deliverables</a></h6>
-                                        <a href="blog-details.html" class="post-date"><i
-                                                class="far fa-calendar-week"></i> 25 JAN 2022</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer> 
-
-        <div class="bottom">
-            <div class="container">
-                <div class="bottom-inner">
-                    Copyright © 2022 Bidzen | NFT Marketplace HTML Template. Designed by <a
-                        href="https://themeforest.net/user/themesflat/portfolio"> Themesflat</a>
-                </div>
-            </div>
-        </div>
+        <Newsletter />
+       <Footer />
 
     </div>
  </div>

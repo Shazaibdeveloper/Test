@@ -2124,7 +2124,9 @@ blockquote .author::before {
 }
 
 #create-item-1 .uploadFile .icon {
-    float: right;
+    right: 30px;
+    position: absolute;
+    top: 20px;
 }
 
 #create-item-1 .uploadFile i {
@@ -2163,6 +2165,7 @@ blockquote .author::before {
     font-size     : 16px;
     letter-spacing: -0.1px;
     margin-right  : 37px;
+    color         : white;
 }
 
 #create-item-1 .btn-check:last-child {
